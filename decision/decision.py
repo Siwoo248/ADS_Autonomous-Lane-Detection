@@ -9,7 +9,7 @@ from lane_detection import detect_lane  # 사용자 구현 모듈 (결과: offse
 # ===========================
 # 설정
 # ===========================
-DATA_PATH = os.path.expanduser("~/ADS/data")
+DATA_PATH = os.path.expanduser("~/ADS_Autonomous-Lane-Detection/data")
 FRAME_PATH = os.path.join(DATA_PATH, "frame.dat")
 META_PATH = os.path.join(DATA_PATH, "meta.json")
 CONTROL_PATH = os.path.join(DATA_PATH, "control.json")

@@ -9,8 +9,8 @@ carla:
   fixed_delta_seconds: 0.05     # SENSOR_TICK
 
 paths:
-  shared_path: "~/ADS/data"
-  control_path: "~/ADS/data/control.json"
+  shared_path: "~/ADS_Autonomous-Lane-Detection/data"
+  control_path: "~/ADS_Autonomous-Lane-Detection/data/control.json"
 
 camera:
   width: 640

@@ -1,0 +1,31 @@
+# ===============================
+#   Simulation Configuration
+# ===============================
+
+carla:
+  host: "carla-server.local"    # 원격 CARLA 서버 주소
+  port: 2000
+  synchronous_mode: true
+  fixed_delta_seconds: 0.05     # SENSOR_TICK
+
+paths:
+  shared_path: "~/ADS/data"
+  control_path: "~/ADS/data/control.json"
+
+camera:
+  width: 640
+  height: 480
+  fov: 90
+  sensor_tick: 0.05
+
+vehicle:
+  spawn_index: 10
+  blueprint_filter: "model3"
+
+control_policy:
+  throttle_base: 0.45
+  throttle_min: 0.18
+  steer_slow_thresh: 0.15
+  steer_max: 0.70
+
+print_period: 0.1

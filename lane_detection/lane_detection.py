@@ -33,7 +33,7 @@ def detect_lane(frame_bgr: np.ndarray) -> float:
             left_x.append(x2)
         else:
             right_x.append(x1)
-            right_x.append(x2)
+            right_x.append(x2
 
     if not left_x or not right_x:
         return 0.0
@@ -45,5 +45,5 @@ def detect_lane(frame_bgr: np.ndarray) -> float:
     offset = (car_center - lane_center) / (w / 2)  # -1 ~ +1
 
     # 양의 값 = 오른쪽 차선쪽으로 쏠림 → 왼쪽 조향 필요
-    steer = np.clip(offset, -1.0, 1.0)
+    steer = np.clip(-offset, -1.0, 1.0)
     return steer

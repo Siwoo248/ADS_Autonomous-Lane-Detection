@@ -1,0 +1,9 @@
+# config.yaml
+data_path: "~/ADS_Autonomous-Lane-Detection/data"
+frame_file: "frame.dat"
+meta_file: "meta.json"
+control_file: "control.json"
+frame_w: 640
+frame_h: 480
+channels: 3
+fps: 20

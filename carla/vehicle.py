@@ -128,7 +128,7 @@ class CameraSensor:
         cam_bp.set_attribute('image_size_y', str(height))
         cam_bp.set_attribute('fov', str(fov))
         cam_bp.set_attribute('sensor_tick', str(sensor_tick))
-        cam_tf = carla.Transform(carla.Location(x=0.7, z=0.8), carla.Rotation(pitch=-10.0))
+        cam_tf = carla.Transform(carla.Location(x=1.2, z=1.4))  # carla.Location(x=0.7, z=0.8), carla.Rotation(pitch=-10.0)
         self.sensor = world.spawn_actor(cam_bp, cam_tf, attach_to=vehicle)
         self.sensor.listen(callback)
 

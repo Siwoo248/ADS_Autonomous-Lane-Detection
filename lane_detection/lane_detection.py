@@ -33,7 +33,7 @@ def detect_lane(frame_bgr: np.ndarray) -> float:
             left_x.append(x2)
         else:
             right_x.append(x1)
-            right_x.append(x2
+            right_x.append(x2)
 
     if not left_x or not right_x:
         return 0.0
